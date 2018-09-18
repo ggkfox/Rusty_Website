@@ -1,0 +1,135 @@
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+/*header*/
+header {
+	height: 100px;
+	background-color: rgba(5, 5, 5, .7);
+	border-bottom: solid 2px black;
+}
+header div {
+	height: 50px;
+	background-image: url("../assets/header.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header div h1 {
+	font-family: 'courgette', cursive;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 7px;
+	color: #222;
+}
+header ul {
+	padding: 0;
+	display: flex;
+	width: 500px;
+	margin: auto;
+}
+header ul li {
+	list-style: none;
+	width: 200px;
+	flex: 1;
+	display: inline-block;
+	text-align: center;
+}
+header ul li h3 {
+	margin-top: 14px;
+}
+header ul li h3 button {
+	background-color: rgba(0,0,0,0.0);
+	background-color: none;
+	border: none;
+	border-radius: 9px;
+	padding: 2px 6px;
+	font-weight: bold;
+	color: white;
+}
+
+header ul li h3 button:hover, header ul li h3 button:focus {
+	color: skyblue;
+	cursor: pointer;
+	text-decoration: none;
+}
+/*end of header*/
+
+/*block 1*/
+#block1 {
+	position: relative;
+	background-image: url("../assets/mainpic.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 85vh;
+}
+#textBox {
+	margin-top: 25vh;
+	color: #555;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: rgba(5,5,5,.3);
+	border: solid 2px black;
+}
+#textBox h2 {
+	color: white;
+	text-align: center;
+}
+.btn {
+	display: block;
+	background-image: linear-gradient(to bottom right, #de4569, #2855bf);
+	margin: auto;
+	margin-top: 10vh;
+	padding: 15px;
+}
+/*end of Block 1*/
+
+/*devider*/
+#devider {
+	background-color: #222;
+	padding: 10px;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+}
+
+#devider h1 {
+	margin: 5px 0 20px 0;
+	text-align: center;
+	color: white;
+}
+
+.info {
+	height: 250px;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: #262626;
+	box-shadow: 2px 2px rgba(0, 199, 206, 0.2);
+	margin-bottom: 10px;
+}
+.info h2, .info p {
+	padding: 15px;
+	color: white;
+	text-align: center;
+}
+/*end of devider*/
+
+/*Block 2*/
+#block2 {
+	background-image: url("../assets/pic2.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 70vh;
+}
+/*end of Block 2*/
+
+/*footer*/
+footer {
+	border-top: 4px solid black;
+	height: 300px;
+	background-color: #222;
+}
