@@ -127,16 +127,93 @@ header ul li h3 button:hover, header ul li h3 button:focus {
 }
 /*end of Block 2*/
 
+
+
+/* MODALS!*/
+.modals {
+	display: none;
+	position: fixed;
+	background-color: rgba(3,3,3,.7);
+	top: 0;
+	left: 0;
+	overflow: auto;
+	z-index: 5;
+}
+
+.contents {
+	background-color: white;
+	margin: 15vh auto;
+	padding: 20px;
+	width: 70%;
+	height: 70vh;
+	animation-name: modalopen;
+	animation-duration: 1s;
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.9), 0 14px 40px 0 rgba(0,0,0,0.9);
+}
+
+#bioModal {
+	width: 100vw;
+	height: 100vh;
+}
+
+#pricingModal {
+	width: 100vw;
+	height: 100vh;
+}
+
+#bioContent {
+}
+
+.closeBtns {
+	padding-right: 10px;
+	padding-left: 10px;
+	float: right;
+	font-size: 30px;
+}
+
+.closeBtns:hover, .closeBtns:focus {
+	cursor: pointer;
+}
+
+
 /*footer*/
 footer {
 	border-top: 4px solid black;
-	height: 300px;
 	background-color: #222;
 }
 
+#iconBox {
+	margin: auto;
+	width: 300px;
+	text-align: center;
+}
+
 .icon {
+	margin: 0 15px;
 	background: linear-gradient(to bottom right, #de4569, #2855bf);
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
+
+.footerBoxs {
+	height: 230px;
+}
+
+#footerBox1 {
+	border-right: 2px solid grey;
+}
+
+#footerBox3 {
+	border-left: 2px solid grey;
+}
+
+footer div div * {
+	color: white;
+}
 /*end of footer*/
+
+/* keyframes */
+@keyframes modalopen{
+	from{opacity: 0}
+	to{opacity: 1}
+}
