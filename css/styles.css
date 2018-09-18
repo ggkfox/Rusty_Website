@@ -64,7 +64,7 @@ header ul li h3 button:hover, header ul li h3 button:focus {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 85vh;
+	height: 90vh;
 }
 #textBox {
 	margin-top: 25vh;
@@ -79,6 +79,7 @@ header ul li h3 button:hover, header ul li h3 button:focus {
 	text-align: center;
 }
 .btn {
+	border: 1px solid #2855bf;
 	display: block;
 	background-image: linear-gradient(to bottom right, #de4569, #2855bf);
 	margin: auto;
@@ -96,13 +97,12 @@ header ul li h3 button:hover, header ul li h3 button:focus {
 }
 
 #devider h1 {
-	margin: 5px 0 20px 0;
 	text-align: center;
 	color: white;
 }
 
 .info {
-	height: 250px;
+	height: 320px;
 	border: 1px solid black;
 	border-radius: 15px;
 	background-color: #262626;
@@ -133,3 +133,10 @@ footer {
 	height: 300px;
 	background-color: #222;
 }
+
+.icon {
+	background: linear-gradient(to bottom right, #de4569, #2855bf);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+/*end of footer*/
