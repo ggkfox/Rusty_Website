@@ -131,54 +131,58 @@ header ul li h3 button:hover, header ul li h3 button:focus {
 
 /* MODALS!*/
 .modals {
+	width: 100vw;
+	height: 100vh;
 	display: none;
 	position: fixed;
-	background-color: rgba(3,3,3,.7);
+	background-color: rgba(3,3,3,.6);
 	top: 0;
 	left: 0;
-	overflow: auto;
+	/* overflow: auto; */
 	z-index: 5;
 }
 
 .contents {
+	overflow: hidden;
 	background-color: white;
-	margin: 15vh auto;
-	padding: 20px;
+	margin: 10vh auto;
+	padding: 10px;
 	width: 70%;
-	height: 70vh;
+	height: 80vh;
 	animation-name: modalopen;
 	animation-duration: 1s;
 	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.9), 0 14px 40px 0 rgba(0,0,0,0.9);
 }
 
+.modalHead {
+	background-color: #333;
+	color: white;
+	height: 15%;
+	width: 100%;
+}
+
+.modalBody {
+	padding: 30px;
+	height: 85%;
+	overflow-y: auto;
+}
+
 .contents h1 {
+	margin: 0;
+	padding-top: 2%;
 	text-align: center;
-}
-
-#bioModal {
-	width: 100vw;
-	height: 100vh;
-}
-
-#pricingModal {
-	width: 100vw;
-	height: 100vh;
-}
-
-#bioContent {
 }
 
 .closeBtns {
 	padding-right: 10px;
 	padding-left: 10px;
 	float: right;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 .closeBtns:hover, .closeBtns:focus {
 	cursor: pointer;
 }
-
 
 /*footer*/
 footer {

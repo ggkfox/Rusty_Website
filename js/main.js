@@ -9,6 +9,8 @@ var contact = document.getElementById('contactModal');
 var openContactBtn = document.getElementById('modal3');
 var closeContactBtn = document.getElementById('closeContact');
 
+var html = document.getElementById('html');
+
 // listen for open clicks
 openBioBtn.addEventListener('click', openBio);
 openPricingBtn.addEventListener('click', openPricing);
@@ -26,25 +28,31 @@ window.addEventListener('click', closeAll)
 // bio
 function openBio(){
     bio.style.display = 'block';
+    html.style.overflowY = 'hidden';
 }
 function closeBio(){
     bio.style.display = 'none';
+    html.style.overflowY = 'auto';
 }
 
 // pricing
 function openPricing(){
     pricing.style.display = 'block';
+    html.style.overflowY = 'hidden';
 }
 function closePricing(){
     pricing.style.display = 'none';
+    html.style.overflowY = 'auto';
 }
 
 // contact
 function openContact(){
-    pricing.style.display = 'block';
+    contact.style.display = 'block';
+    html.style.overflowY = 'hidden';
 }
 function closeContact(){
     contact.style.display = 'none';
+    html.style.overflowY = 'auto';
 }
 
 function closeAll(e){ //from window click
